@@ -101,7 +101,7 @@ def processUploadFiles(filename,filesize,files,update,bot,message,thread=None,jd
                         client.saveEvidence(evidence)
                     except:pass
                 return client
-            else:
+            else: 
                 bot.editMessageText(message,'❌Error al analizar la página❌')
         elif cloudtype == 'cloud':
             bot.editMessageText(message,'⏫Subiendo a la nube...⏫')
@@ -233,7 +233,7 @@ def onmessage(update,bot:ObigramClient):
         
 
         #AQUÍ EL USUARIO DE TELEGRAM
-        tl_admin_user = Zeta30
+        tl_admin_user = ‘Zeta30'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -526,7 +526,7 @@ def onmessage(update,bot:ObigramClient):
 def main():
     
     #TOKEN DEL BOT
-    bot_token = 5279876048:AAHLdqtv4GvCMudby_qcoKkYbRPgaGJnV8k
+    bot_token = ‘5279876048:AAHLdqtv4GvCMudby_qcoKkYbRPgaGJnV8k’
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
